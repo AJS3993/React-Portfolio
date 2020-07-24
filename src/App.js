@@ -1,6 +1,6 @@
 import React from 'react';
 import {MDBContainer,MDBRow,MDBCol,MDBCard,MDBView,MDBCardTitle,MDBCardBody,MDBCardGroup,MDBCardFooter,MDBIcon,
-  MDBMask,MDBInput,MDBAvatar,MDBBtn,MDBModal,MDBModalHeader,MDBModalBody,MDBModalFooter,MDBCardUp} from 'mdbreact';
+  MDBMask,MDBInput,MDBAvatar,MDBBtn,MDBModal,MDBModalHeader,MDBModalBody,MDBModalFooter} from 'mdbreact';
   import './App.css';
 
 class App extends React.Component {
@@ -113,15 +113,19 @@ class App extends React.Component {
         <MDBContainer fluid>
           <MDBRow>
             <MDBCol lg='4' md='12'>
-              <MDBCard className='testimonial-card text-center mb-4 my-4 rgba-white-light'>
-             
+              <MDBCard  className='testimonial-card text-center m-4 rgba-grey-light z-depth-1'>
+              <div className='p-2 border border-light' style={{
+            backgroundImage:
+              "url('https://i.imgur.com/tAKxpRX.jpg')", backgroundSize: "cover"
+          }}>
                 <MDBAvatar
                   tag='img'
                   alt='THE LEGEND'
                   src='https://i.imgur.com/UcihNgj.jpg'
-                  className='z-depth-1-half my-4 rounded-circle mx-auto w-50'
+                  className='z-depth-1-half my-4 mx-auto w-50'
                 />
-                <MDBCardBody>
+                </div>
+                <MDBCardBody className='rgba-white-light border-top border-light'>
                   <MDBCardTitle>
                     <strong>Andrew J Smith</strong>
                   </MDBCardTitle>
@@ -129,9 +133,6 @@ class App extends React.Component {
                     Web designer
                   </h5>
                   <p className='black-text'>Austin, TX</p>
-                  <MDBBtn floating tag='a' color=''>
-                    <MDBIcon fab icon='facebook' className='black-text' />
-                  </MDBBtn>
                   <MDBBtn floating tag='a' color=''>
                     <MDBIcon fab icon='github' className='black-text' />
                   </MDBBtn>
@@ -154,10 +155,10 @@ class App extends React.Component {
                   </MDBBtn>
                 </MDBCardBody>
               </MDBCard>
-              <MDBCard className='mb-4 rgba-white-strong'>
+              <MDBCard className='mb-4 rgba-white-light'>
                 <MDBCardBody className='text-center'>
                   <h5>
-                    <strong>Achievements</strong>
+                    <strong>Skills</strong>
                   </h5>
 
                   <hr className='my-3' />
@@ -169,7 +170,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('bootstrap')}
                   >
-                    Bootstrap Master
+                    Bootstrap
                   </MDBBtn>
                   <MDBBtn
                     color='blue-grey'
@@ -178,7 +179,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('wordpress')}
                   >
-                    WordPress Master
+                    React
                   </MDBBtn>
                   <MDBBtn
                     size='sm'
@@ -186,7 +187,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('angular')}
                   >
-                    Angular Master
+                    Javascript
                   </MDBBtn>
                   <MDBBtn
                     color='secondary'
@@ -195,7 +196,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('mdb')}
                   >
-                    MDB Master
+                    Python
                   </MDBBtn>
                   <MDBBtn
                     color='deep-purple'
@@ -204,7 +205,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('community')}
                   >
-                    Community contributor
+                    MongoDB
                   </MDBBtn>
                   <MDBBtn
                     color='indigo'
@@ -213,7 +214,7 @@ class App extends React.Component {
                     className='px-3'
                     onClick={() => this.toggle('pro')}
                   >
-                    MDB Pro User
+                    SQL
                   </MDBBtn>
                 </MDBCardBody>
               </MDBCard>
@@ -226,6 +227,9 @@ class App extends React.Component {
                 </h1>
               </div>
               <MDBCardGroup deck>
+                
+                {/* card 1 */}
+
                 <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
@@ -239,32 +243,35 @@ class App extends React.Component {
                   </MDBView>
                   <MDBCardBody>
                     <h4 className='card-title'>Project name</h4>
-                    <p className='card-text'>
+                    <p className='card-text black-text'>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
-                    <span className='pull-left pt-2'>
+                    <span className='float-left pt-2'>
                       <a href='#!'>
-                        <MDBIcon icon='share-alt' className='mr-2' />
+                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
                       </a>
                       <a href='#!'>
-                        <MDBIcon icon='heart' className='mr-2' />10
+                        <MDBIcon fab icon='react cyan-text' className='mr-0' />
                       </a>
+                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/>
                     </span>
                     <span className='float-right'>
-                      <a href='#!' className='waves-effect p-2'>
-                        Live Preview <MDBIcon icon='image' className='ml-1' />
+                      <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
+                        Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
                   </MDBCardFooter>
                 </MDBCard>
 
-                <MDBCard className='mb-5 rgba-white-strong' narrow>
+              {/* card 2 */}
+                
+                <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/FFdAPzX.png'
+                      src='https://i.imgur.com/QwLb70q.png'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -274,34 +281,39 @@ class App extends React.Component {
                   </MDBView>
                   <MDBCardBody>
                     <h4 className='card-title'>Project name</h4>
-                    <p className='card-text'>
+                    <p className='card-text black-text'>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
-                    <span className='pull-left pt-2'>
+                    <span className='float-left pt-2'>
                       <a href='#!'>
-                        <MDBIcon icon='share-alt' className='mr-2' />
+                        <MDBIcon fab icon='python amber-text' className='mr-2' />
                       </a>
-                      <a href='#!'>
-                        <MDBIcon icon='heart' className='mr-2' />15
-                      </a>
+                      
+                  
                     </span>
                     <span className='float-right'>
-                      <a href='#!' className='waves-effect p-2'>
-                        Live Preview <MDBIcon icon='image' className='ml-1' />
+                      <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
+                        Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
                   </MDBCardFooter>
                 </MDBCard>
+              
               </MDBCardGroup>
 
+
+
               <MDBCardGroup deck>
-                <MDBCard className='mb-5 rgba-white-strong' narrow>
+
+              {/* card 3 */}
+
+                <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/OWmI7xu.png'
+                      src='https://i.imgur.com/YiT80Ww.png'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -311,32 +323,31 @@ class App extends React.Component {
                   </MDBView>
                   <MDBCardBody>
                     <h4 className='card-title'>Project name</h4>
-                    <p className='card-text'>
+                    <p className='card-text black-text'>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
-                    <span className='pull-left pt-2'>
-                      <a href='#!'>
-                        <MDBIcon icon='share-alt' className='mr-2' />
+                    <span className='float-left pt-2'>
+                    <a href='#!'>
+                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
                       </a>
-                      <a href='#!'>
-                        <MDBIcon icon='heart' className='mr-2' />21
-                      </a>
-                    </span>
+                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/></span>
                     <span className='float-right'>
-                      <a href='#!' className='waves-effect p-2'>
-                        Live Preview <MDBIcon icon='image' className='ml-1' />
+                      <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
+                        Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
                   </MDBCardFooter>
                 </MDBCard>
 
-                <MDBCard className='mb-5 rgba-white-strong' narrow>
+                {/* card 4 */}
+
+                <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-landing.jpg'
+                      src='https://i.imgur.com/r414M0G.png'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -346,27 +357,29 @@ class App extends React.Component {
                   </MDBView>
                   <MDBCardBody>
                     <h4 className='card-title'>Project name</h4>
-                    <p className='card-text'>
+                    <p className='card-text black-text'>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
-                    <span className='pull-left pt-2'>
-                      <a href='#!'>
-                        <MDBIcon icon='share-alt' className='mr-2' />
+                    <span className='float-left pt-2'>
+                    <a href='#!'>
+                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
                       </a>
-                      <a href='#!'>
-                        <MDBIcon icon='heart' className='mr-2' />36
-                      </a>
+                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/>
+                    
                     </span>
                     <span className='float-right'>
-                      <a href='#!' className='waves-effect p-2'>
-                        Live Preview <MDBIcon icon='image' className='ml-1' />
+                      <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
+                        Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
                   </MDBCardFooter>
                 </MDBCard>
+
+
+
               </MDBCardGroup>
 
              
