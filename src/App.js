@@ -233,7 +233,7 @@ class App extends React.Component {
                 <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/Ya5rZqw.png'
+                      src='https://i.imgur.com/Ya5rZqw.png?2'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -242,10 +242,9 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Project name</h4>
+                    <h4 className='card-title'>Pizza Time</h4>
                     <p className='card-text black-text'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    Pizza Time is a tool for restaurant owners to create their menu and sell their food. Pizza Time is also for users to order food directly from the app. It was developed with Mongoose, Express, React, and Node. It is currently still a work in progress.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
@@ -271,7 +270,7 @@ class App extends React.Component {
                 <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/QwLb70q.png'
+                      src='https://i.imgur.com/QwLb70q.png?4'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -280,10 +279,9 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Project name</h4>
+                    <h4 className='card-title'>Groupie</h4>
                     <p className='card-text black-text'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    With this app, keeping tabs on your favorite local artists just got a lot easier. Simply create an account and search events or artists in your area. Add your favorite artists and keep track of their upcoming events. Add their events to your schedule. Never miss out on you favorite events again.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
@@ -313,7 +311,7 @@ class App extends React.Component {
                 <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/YiT80Ww.png'
+                      src='https://i.imgur.com/YiT80Ww.png?1'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -322,10 +320,9 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Project name</h4>
+                    <h4 className='card-title'>Mongoose Flights</h4>
                     <p className='card-text black-text'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      A flight tracking app that uses MongoDB to hold data. I built it to practice with MongoDB so it has a bit more functionality than a real similar app would have.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
@@ -347,7 +344,7 @@ class App extends React.Component {
                 <MDBCard className='mb-5 rgba-white-light' narrow>
                   <MDBView cascade hover>
                     <img
-                      src='https://i.imgur.com/r414M0G.png'
+                      src='https://i.imgur.com/r414M0G.png?2'
                       className='img-fluid'
                       alt='project one'
                     />
@@ -356,10 +353,9 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Project name</h4>
+                    <h4 className='card-title'>My Book Shelf</h4>
                     <p className='card-text black-text'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    MyBookShelf is your own personal library tracker. Sort your books to help you remember which books you have read and which books you haven't.
                     </p>
                   </MDBCardBody>
                   <MDBCardFooter className='links-light'>
