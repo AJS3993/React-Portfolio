@@ -222,7 +222,7 @@ class App extends React.Component {
             </MDBCol>
             <MDBCol lg='8' md='12' className='text-center'>
               <div className='text-center mt-3 mb-5'>
-                <h1 className='text-black'>
+                <h1 className='text-white'>
                   <strong>PR<MDBIcon icon="cog" spin fixed />JECTS</strong>
                 </h1>
               </div>
@@ -242,27 +242,29 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Pizza Time</h4>
+                    <h2 className='card-title'>Pizza Time</h2>
+                    <hr className='my-3' />
                     <p className='card-text black-text'>
                     Pizza Time is a tool for restaurant owners to create their menu and sell their food. Pizza Time is also for users to order food directly from the app. It was developed with Mongoose, Express, React, and Node. It is currently still a work in progress.
                     </p>
                   </MDBCardBody>
-                  <MDBCardFooter className='links-light'>
-                    <span className='float-left pt-2'>
+                  <hr className='m-3' />
+                  <MDBCardBody className='my-n4 rgba-white-dark'>
+                    <span className='float-left'>
                       <a href='#!'>
-                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
+                        <MDBIcon fab size='2x' icon='js indigo-text' className='mr-2' />
                       </a>
                       <a href='#!'>
-                        <MDBIcon fab icon='react cyan-text' className='mr-0' />
+                        <MDBIcon fab size='2x' icon='react cyan-text' className='mr-0' />
                       </a>
-                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/>
+                      <img className='img-fluid d-inline' width= "100px" src='https://i.imgur.com/PCtjYTY.png'/>
                     </span>
                     <span className='float-right'>
                       <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
                         Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
-                  </MDBCardFooter>
+                  </MDBCardBody>
                 </MDBCard>
 
               {/* card 2 */}
@@ -279,25 +281,25 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Groupie</h4>
+                    <h2 className='card-title'>Groupie</h2>
+                    <hr className='my-3' />
                     <p className='card-text black-text'>
                     With this app, keeping tabs on your favorite local artists just got a lot easier. Simply create an account and search events or artists in your area. Add your favorite artists and keep track of their upcoming events. Add their events to your schedule. Never miss out on you favorite events again.
                     </p>
                   </MDBCardBody>
-                  <MDBCardFooter className='links-light'>
+                  <hr className='m-3' />
+                  <MDBCardBody className='my-n4 rgba-white-dark'>
                     <span className='float-left pt-2'>
                       <a href='#!'>
-                        <MDBIcon fab icon='python amber-text' className='mr-2' />
+                        <MDBIcon fab size='2x' icon='python amber-text' className='mr-2 mb-3' />
                       </a>
-                      
-                  
                     </span>
                     <span className='float-right'>
                       <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
                         Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
-                  </MDBCardFooter>
+                  </MDBCardBody>
                 </MDBCard>
               
               </MDBCardGroup>
@@ -320,23 +322,27 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>Mongoose Flights</h4>
+                    <h2 className='card-title'>Mongoose Flights</h2>
+                    <hr className='my-3' />
                     <p className='card-text black-text'>
                       A flight tracking app that uses MongoDB to hold data. I built it to practice with MongoDB so it has a bit more functionality than a real similar app would have.
                     </p>
                   </MDBCardBody>
-                  <MDBCardFooter className='links-light'>
-                    <span className='float-left pt-2'>
-                    <a href='#!'>
-                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
+                  <hr className='m-3' />
+                  <MDBCardBody className='my-n4 rgba-white-dark'>
+                    <span className='float-left'>
+                      <a href='#!'>
+                        <MDBIcon fab size='2x' icon='js indigo-text' className='mr-2' />
                       </a>
-                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/></span>
+                      
+                      <img className='img-fluid d-inline' width= "100px" src='https://i.imgur.com/PCtjYTY.png'/>
+                    </span>
                     <span className='float-right'>
                       <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
                         Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
-                  </MDBCardFooter>
+                  </MDBCardBody>
                 </MDBCard>
 
                 {/* card 4 */}
@@ -353,25 +359,26 @@ class App extends React.Component {
                     </a>
                   </MDBView>
                   <MDBCardBody>
-                    <h4 className='card-title'>My Book Shelf</h4>
+                    <h2 className='card-title'>My Book Shelf</h2>
+                    <hr className='my-3' />
                     <p className='card-text black-text'>
                     MyBookShelf is your own personal library tracker. Sort your books to help you remember which books you have read and which books you haven't.
                     </p>
                   </MDBCardBody>
-                  <MDBCardFooter className='links-light'>
-                    <span className='float-left pt-2'>
-                    <a href='#!'>
-                        <MDBIcon fab icon='js indigo-text' className='mr-2' />
+                  <hr className='m-3' />
+                  <MDBCardBody className='my-n4 rgba-white-dark'>
+                    <span className='float-left'>
+                      <a href='#!'>
+                        <MDBIcon fab size='2x' icon='js indigo-text' className='mr-2' />
                       </a>
-                      <img className='img-fluid d-inline m-0 p-0' width= "75px" src='https://i.imgur.com/PCtjYTY.png'/>
-                    
+                      <img className='img-fluid d-inline' width= "100px" src='https://i.imgur.com/PCtjYTY.png'/>
                     </span>
                     <span className='float-right'>
                       <a href='#!' className='waves-effect p-2 black-text animated pulse infinite'>
                         Live Preview <MDBIcon icon='image black-text' className='ml-1' />
                       </a>
                     </span>
-                  </MDBCardFooter>
+                  </MDBCardBody>
                 </MDBCard>
 
 
