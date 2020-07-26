@@ -1,7 +1,7 @@
 import React from 'react';
-import {MDBContainer,MDBRow,MDBCol,MDBCard,MDBView,MDBCardTitle,MDBCardBody,MDBCardGroup,MDBIcon,
-  MDBMask,MDBBtn,MDBCardImage} from 'mdbreact';
-  import './App.css';
+import {MDBContainer,MDBRow,MDBCol,MDBCard,MDBView,MDBCardTitle,MDBCardBody,MDBCardGroup,MDBIcon,MDBMask,MDBBtn,MDBCardImage} from 'mdbreact';
+import './App.css';
+  // import ScrollSpy from './scrollSpy';
 
 class App extends React.Component {
   
@@ -93,15 +93,17 @@ class App extends React.Component {
             
             
             <MDBCol lg='8' md='12' className='text-center' >
-              <div className='text-center mt-3 mb-5'>
+              <div className='text-center mt-3 mb-4'>
                 <h1 className='white-text'>
                   
                   <strong>PROJECTS</strong>
                   <hr color='white'/>
                 </h1>
               </div>
-              
-              <MDBCardGroup deck>
+          
+            {/* <ScrollSpy/> */}
+
+            <MDBCardGroup deck>
                 
                 {/* card 1 */}
 
@@ -197,10 +199,8 @@ class App extends React.Component {
                 </MDBCard>
               
               </MDBCardGroup>
-
-
-
-              <MDBCardGroup deck>
+     
+          <MDBCardGroup deck>
 
               {/* card 3 */}
 
@@ -291,7 +291,7 @@ class App extends React.Component {
 
 
               </MDBCardGroup>
-
+         
              
             </MDBCol>
           </MDBRow>
