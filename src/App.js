@@ -8,7 +8,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id='profile-ex' className='mb-5'>
+      <div id='profile-ex' className='my-4'>
        
         <MDBContainer fluid>
           <MDBRow>
@@ -114,7 +114,7 @@ class App extends React.Component {
                       className='card-img-top'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://pizzatime465.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -140,7 +140,7 @@ class App extends React.Component {
                     </div>
                     <div>
                     
-                      <a href='#!' className='waves-effect white-text'>
+                      <a href='https://pizzatime465.herokuapp.com/' className='waves-effect white-text' target="_blank">
                      
                         Live Preview <MDBIcon icon='image white-text' />
                   
@@ -163,7 +163,7 @@ class App extends React.Component {
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://groupie3993.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -186,7 +186,7 @@ class App extends React.Component {
 </div>
 <div>
 
-  <a href='#!' className='waves-effect white-text'>
+  <a href='https://groupie3993.herokuapp.com/' className='waves-effect white-text' target="_blank">
   
     Live Preview <MDBIcon icon='image white-text' />
 
@@ -211,7 +211,7 @@ class App extends React.Component {
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://mongoose-flights3890654.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -233,7 +233,7 @@ class App extends React.Component {
                     </div>
                     <div>
                     
-                      <a href='#!' className='waves-effect white-text'>
+                      <a href='https://mongoose-flights3890654.herokuapp.com/' className='waves-effect white-text' target="_blank">
                      
                         Live Preview <MDBIcon icon='image white-text' />
                   
@@ -254,7 +254,7 @@ class App extends React.Component {
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://my-book-shelf789.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -276,7 +276,7 @@ class App extends React.Component {
 </div>
 <div>
 
-  <a href='#!' className='waves-effect white-text'>
+  <a href='https://my-book-shelf789.herokuapp.com/' className='waves-effect white-text' target="_blank">
  
     Live Preview <MDBIcon icon='image white-text' />
 
