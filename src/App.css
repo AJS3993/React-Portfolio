@@ -271,3 +271,8 @@
     -o-transition: .4s;
     transition: .4s;
   }
+
+  h5 {
+    display: inline-block;
+    margin: 0;
+  }
