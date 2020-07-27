@@ -37,18 +37,23 @@ class App extends React.Component {
                   </p>
                   <hr color='white'/>
                   
-                  <MDBBtn floating tag='a' color='blue'>
-                    <MDBIcon fab icon='github' className='white-text' />
+                  <a href='https://github.com/AJS3993'>
+                  <MDBBtn social="git" size="sm" className='px-2'>
+                    <MDBIcon fab icon="github" className="pr-1" /> Github
                   </MDBBtn>
-                  
-                  <MDBBtn floating tag='a' color='blue'>
-                    <MDBIcon fab icon='linkedin' className='white-text' />
+                  </a>
+
+                <a href='https://www.linkedin.com/in/ajs3993/'>
+                  <MDBBtn social="li" size="sm" className='px-2'>
+                    <MDBIcon fab icon="linkedin-in" className="pr-1" /> Linkedin
                   </MDBBtn>
-                 
-                  <MDBBtn color='blue'size='md'rounded>
-                    Email
-                    <MDBIcon icon='paper-plane' className='ml-2' />
+                </a>
+
+                 <a href='https://i.imgur.com/lx1QKqW.png'>
+                  <MDBBtn social="gplus" size="sm" className='px-2'> 
+                  <MDBIcon far icon="file-alt" /> Resume
                   </MDBBtn>
+                  </a>
                 </MDBCardBody>
               </MDBCard>
               
