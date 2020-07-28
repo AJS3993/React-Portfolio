@@ -8,7 +8,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div id='profile-ex' className='my-4'>
+      <div id='profile-ex' className='my-3'>
        
         <MDBContainer fluid>
           <MDBRow>
@@ -93,16 +93,18 @@ class HomePage extends React.Component {
                 </MDBCardBody>
               </MDBCard>
 
+              
+
             </MDBCol>
             
             
             
             <MDBCol lg='8' md='12' className='text-center' >
-              <div className='text-center mt-3 mb-4'>
+              <div className='text-center mb-4'>
                 <h1 className='white-text'>
                   
-                  <strong>PROJECTS</strong>
-                  <hr color='white'/>
+                  Projects
+                 
                 </h1>
               </div>
           
@@ -112,7 +114,7 @@ class HomePage extends React.Component {
                 
                 {/* card 1 */}
 
-                <MDBCard className=' mb-5 mdb-color darken-3' cascade>
+                <MDBCard className=' mb-5 m-4 mdb-color darken-3' narrow cascade>
                   <MDBView cascade hover>
                     <MDBCardImage
                       src='https://i.imgur.com/Ya5rZqw.png?2'
@@ -161,7 +163,7 @@ class HomePage extends React.Component {
 
               {/* card 2 */}
                 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/QwLb70q.png?4'
@@ -209,7 +211,7 @@ class HomePage extends React.Component {
 
               {/* card 3 */}
 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/YiT80Ww.png?1'
@@ -252,7 +254,7 @@ class HomePage extends React.Component {
 
                 {/* card 4 */}
 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/r414M0G.png?2'

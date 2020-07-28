@@ -44,7 +44,7 @@ render() {
       </MDBScrollspyList>
 
       <MDBTabContent >
-        <MDBScrollspyText onScroll={this.handleScroll} scrollSpyRef={this.scrollSpyText} className=' border white-text rgba-blue-grey-light' style={{"height" : "600px"}}>
+        <MDBScrollspyText onScroll={this.handleScroll} scrollSpyRef={this.scrollSpyText} className=' border white-text rgba-blue-grey-light' style={{"height" : "500px"}}>
           
           <h4 id="Javascript">Javascript</h4>
           <MDBCardGroup deck>
