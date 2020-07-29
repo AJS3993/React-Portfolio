@@ -49,7 +49,7 @@ class HomePage extends React.Component {
                   </MDBBtn>
                 </a>
 
-                 <a href='https://i.imgur.com/lx1QKqW.png'>
+                 <a href='https://i.imgur.com/Lv2Tfie.png'>
                   <MDBBtn social="gplus" size="sm" className='px-2'> 
                   <MDBIcon far icon="file-alt" /> Resume
                   </MDBBtn>
