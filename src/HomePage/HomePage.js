@@ -93,6 +93,21 @@ class HomePage extends React.Component {
                 </MDBCardBody>
               </MDBCard>
 
+              <MDBCard className='m-4 mdb-color darken-3'>
+                <MDBCardBody className='text-center'>
+                  <h5 className='white-text'>
+                    <strong>About Me</strong>
+                  </h5>
+
+                  <hr color='white'/>
+
+                <p className='white-text'>
+                I am a software engineer with a background in science and healthcare. I have built many projects both front and back end. I currently have the most experience in javascript, react and python but I also have some experience with many other technologies and I am always learning more. 
+                </p>
+                  
+                
+                </MDBCardBody>
+              </MDBCard>
               
 
             </MDBCol>
@@ -284,6 +299,103 @@ class HomePage extends React.Component {
 <div>
 
   <a href='https://my-book-shelf789.herokuapp.com/' className='waves-effect white-text' target="_blank">
+ 
+    Live Preview <MDBIcon icon='image white-text' />
+
+  </a>
+</div>
+
+
+</h5>
+</MDBCardBody>
+</MDBCard>
+
+
+
+              </MDBCardGroup>
+
+          
+     
+          <MDBCardGroup deck>
+
+              {/* card 5 */}
+
+                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
+                  <MDBView cascade hover>
+                    <img
+                      src='https://i.imgur.com/akoHktO.png?1'
+                      className='img-fluid'
+                      alt='project one'
+                    />
+                    <a href='https://ajs3993.github.io/WordGame/' target="_blank">
+                      <MDBMask overlay='white-slight' />
+                    </a>
+                  </MDBView>
+                  <MDBCardBody className='pb-2'>
+                    <h2 className='card-title white-text'>HangMan</h2>
+                    <hr color='white'/>
+                    <p className='card-text white-text'>
+                      Javascript Hangman. Still a work in progress</p>
+                    <hr color='white'/>
+                    
+                    <h5 className='d-flex justify-content-between'>
+
+                    <div>
+                      
+                       
+                        <MDBIcon fab icon='js yellow-text' className='mr-2' />
+                     
+                      
+                    </div>
+                    <div>
+                    
+                      <a href='https://ajs3993.github.io/WordGame/' className='waves-effect white-text' target="_blank">
+                     
+                        Live Preview <MDBIcon icon='image white-text' />
+                  
+                      </a>
+                    </div>
+
+
+                    </h5>
+                  </MDBCardBody>
+                </MDBCard>
+
+                {/* card 6 */}
+
+                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
+                  <MDBView cascade hover>
+                    <img
+                      src='https://i.imgur.com/7pmldI3.png?1'
+                      className='img-fluid'
+                      alt='project one'
+                    />
+                    <a href='https://ajs3993.github.io/React-Rolodex/' target="_blank">
+                      <MDBMask overlay='white-slight' />
+                    </a>
+                  </MDBView>
+                  <MDBCardBody className='pb-2'>
+                    <h2 className='card-title white-text'>React Rolodex</h2>
+                    <hr color='white'/>
+                    <p className='card-text white-text'>
+                      A rolodex made with react components. A searchbar allows you to sort through employee id cards.
+                     </p>
+                    <hr color='white'/>
+                    
+                    <h5 className='d-flex justify-content-between'>
+
+<div>
+  
+<MDBIcon fab icon='js yellow-text' className='mr-2' />
+                     
+                
+<MDBIcon fab icon='react cyan-text' />
+ 
+  
+</div>
+<div>
+
+  <a href='https://ajs3993.github.io/React-Rolodex/' className='waves-effect white-text' target="_blank">
  
     Live Preview <MDBIcon icon='image white-text' />
 
