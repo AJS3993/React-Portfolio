@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.ecea60f9.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.79d78836.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.79d78836.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.b70a78d7.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.d7602090.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.d7602090.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.994170a6.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.994170a6.js.map",
     "static/css/2.dbfaf126.chunk.css": "/React-Portfolio/static/css/2.dbfaf126.chunk.css",
-    "static/js/2.3cf18e7b.chunk.js": "/React-Portfolio/static/js/2.3cf18e7b.chunk.js",
-    "static/js/2.3cf18e7b.chunk.js.map": "/React-Portfolio/static/js/2.3cf18e7b.chunk.js.map",
+    "static/js/2.e5d967b5.chunk.js": "/React-Portfolio/static/js/2.e5d967b5.chunk.js",
+    "static/js/2.e5d967b5.chunk.js.map": "/React-Portfolio/static/js/2.e5d967b5.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
-    "precache-manifest.a535194b76eec59aee615726f5f70ae1.js": "/React-Portfolio/precache-manifest.a535194b76eec59aee615726f5f70ae1.js",
+    "precache-manifest.dc1311b35a21bb2eb0349c4a9d39bad0.js": "/React-Portfolio/precache-manifest.dc1311b35a21bb2eb0349c4a9d39bad0.js",
     "service-worker.js": "/React-Portfolio/service-worker.js",
     "static/css/2.dbfaf126.chunk.css.map": "/React-Portfolio/static/css/2.dbfaf126.chunk.css.map",
-    "static/css/main.ecea60f9.chunk.css.map": "/React-Portfolio/static/css/main.ecea60f9.chunk.css.map",
-    "static/js/2.3cf18e7b.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.3cf18e7b.chunk.js.LICENSE.txt",
+    "static/css/main.b70a78d7.chunk.css.map": "/React-Portfolio/static/css/main.b70a78d7.chunk.css.map",
+    "static/js/2.e5d967b5.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.e5d967b5.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/React-Portfolio/static/media/default-skin.b257fa9c.svg",
     "static/media/all.min.css": "/React-Portfolio/static/media/fa-solid-900.ee09ad75.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.994170a6.js",
     "static/css/2.dbfaf126.chunk.css",
-    "static/js/2.3cf18e7b.chunk.js",
-    "static/css/main.ecea60f9.chunk.css",
-    "static/js/main.79d78836.chunk.js"
+    "static/js/2.e5d967b5.chunk.js",
+    "static/css/main.b70a78d7.chunk.css",
+    "static/js/main.d7602090.chunk.js"
   ]
 }
