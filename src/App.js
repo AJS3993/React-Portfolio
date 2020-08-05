@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import HomePage from './HomePage/HomePage';
+import Landing from './Landing/Landing';
+
 
 function App() {
   return (
@@ -12,22 +13,15 @@ function App() {
 <Route 
       exact path={`/`} 
       render={ (routerProps
-      ) => < HomePage/>} />
+      ) => < Landing/>} />
 
           
-
-          <Route
-            exact
-            path="/Contact"
-            render={() => (
-              <HomePage
-              />
-            )}
-          />
+         
 
               
               </Switch>
-
+              
+                 
     </div>
   );
 }
