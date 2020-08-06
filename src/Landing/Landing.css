@@ -8,7 +8,7 @@ font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 #landing .navbar.scrolling-navbar.top-nav-collapse  {
-  background-color: rgba(13, 12, 14, 0.6) !important;
+  background-color: rgba(13, 12, 14, 0.6);
   color: rgb(255, 255, 255);
 }
 
@@ -22,9 +22,6 @@ font-family: "Open Sans", Helvetica, Arial, sans-serif;
   height: 100vh;
 }
 
-#landing .rgba-gradient {
-  background: -webkit-linear-gradient(45deg, rgba(220, 158, 25, 0.2), rgba(0, 0, 0, 0.5) 100%);
-}
 
 #landing h6 {
     line-height: 1.7;
@@ -47,10 +44,7 @@ label {
   color: white !important;
 }
 
-#cardBack{
-  background: url('https://cdn.hipwallpaper.com/i/85/42/j4R6DK.jpg');
 
-}
 
 .mdb-skin-custom .side-nav .collapsible li .collapsible-header {
   color: #424242;

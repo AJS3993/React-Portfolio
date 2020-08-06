@@ -3,62 +3,25 @@ import { MDBScrollspyBox, MDBScrollspyList, MDBScrollspyListItem, MDBScrollspyTe
 import './scrollSpy.css'
 
 class ScrollSpy extends Component {
-constructor(props) {
-super(props);
-this.state = {
-active: 0,
-sections: []
-};
-
-this.scrollSpyText = React.createRef();
-}
-
-componentDidMount() {
-let sections = this.scrollSpyText.current.getElementsByTagName("h4");
-this.setState({ sections });
-}
-
-handleScroll = e => {
-const scrollTop = e.target.scrollTop;
-const sections = this.state.sections;
-const lastIndex = sections.length - 1;
-
-for (let i = 0; i < lastIndex; i++) { if ((scrollTop> sections[i].offsetTop - 20) && (scrollTop < sections[i +
-    1].offsetTop - 20)) { this.setState({ active: i }); } }; if (scrollTop> sections[lastIndex].offsetTop - 20)
-    this.setState({ active: lastIndex });
-    }
 
 render() {
   return (
-    <MDBScrollspyBox>
-      <MDBScrollspyList className="d-flex justify-content-start mdb-color darken-3">
-        <MDBScrollspyListItem href="#Javascript" active={this.state.active===0}>
-          Javascript
-        </MDBScrollspyListItem>
-        <MDBScrollspyListItem href="#React" active={this.state.active===1}>
-          React
-        </MDBScrollspyListItem>
-        <MDBScrollspyListItem href="#Python" active={this.state.active===2}>
-          Python
-        </MDBScrollspyListItem>
-      </MDBScrollspyList>
+    
+      <>
 
-      <MDBTabContent >
-        <MDBScrollspyText onScroll={this.handleScroll} scrollSpyRef={this.scrollSpyText} className=' border white-text rgba-blue-grey-light' style={{"height" : "500px"}}>
           
-          <h4 id="Javascript">Javascript</h4>
-          <MDBCardGroup deck>
+        <MDBCardGroup>
                 
                 {/* card 1 */}
 
-                <MDBCard className=' mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
                   <MDBView cascade hover>
                     <MDBCardImage
                       src='https://i.imgur.com/Ya5rZqw.png?2'
                       className='card-img-top'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://pizzatime465.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -84,7 +47,7 @@ render() {
                     </div>
                     <div>
                     
-                      <a href='#!' className='waves-effect white-text'>
+                      <a href='https://pizzatime465.herokuapp.com/' className='waves-effect white-text' target="_blank">
                      
                         Live Preview <MDBIcon icon='image white-text' />
                   
@@ -100,14 +63,14 @@ render() {
 
               {/* card 2 */}
                 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/QwLb70q.png?4'
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://groupie3993.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -130,7 +93,7 @@ render() {
 </div>
 <div>
 
-  <a href='#!' className='waves-effect white-text'>
+  <a href='https://groupie3993.herokuapp.com/' className='waves-effect white-text' target="_blank">
   
     Live Preview <MDBIcon icon='image white-text' />
 
@@ -143,19 +106,19 @@ render() {
                 </MDBCard>
               
               </MDBCardGroup>
-          <h4 id="React">React</h4>
-          <MDBCardGroup deck>
+     
+          <MDBCardGroup>
 
               {/* card 3 */}
 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/YiT80Ww.png?1'
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://mongoose-flights3890654.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -177,7 +140,7 @@ render() {
                     </div>
                     <div>
                     
-                      <a href='#!' className='waves-effect white-text'>
+                      <a href='https://mongoose-flights3890654.herokuapp.com/' className='waves-effect white-text' target="_blank">
                      
                         Live Preview <MDBIcon icon='image white-text' />
                   
@@ -191,14 +154,14 @@ render() {
 
                 {/* card 4 */}
 
-                <MDBCard className='mb-5 mdb-color darken-3' cascade>
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
                   <MDBView cascade hover>
                     <img
                       src='https://i.imgur.com/r414M0G.png?2'
                       className='img-fluid'
                       alt='project one'
                     />
-                    <a href='#!'>
+                    <a href='https://my-book-shelf789.herokuapp.com/' target="_blank">
                       <MDBMask overlay='white-slight' />
                     </a>
                   </MDBView>
@@ -220,7 +183,7 @@ render() {
 </div>
 <div>
 
-  <a href='#!' className='waves-effect white-text'>
+  <a href='https://my-book-shelf789.herokuapp.com/' className='waves-effect white-text' target="_blank">
  
     Live Preview <MDBIcon icon='image white-text' />
 
@@ -235,14 +198,106 @@ render() {
 
 
               </MDBCardGroup>
-          <h4 id="Python">Python</h4>
-          <p>
-            Section 3
-          </p>
+
           
-        </MDBScrollspyText>
-      </MDBTabContent>
-    </MDBScrollspyBox>
+     
+          <MDBCardGroup>
+
+              {/* card 5 */}
+
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
+                  <MDBView cascade hover>
+                    <img
+                      src='https://i.imgur.com/akoHktO.png?1'
+                      className='img-fluid'
+                      alt='project one'
+                    />
+                    <a href='https://ajs3993.github.io/WordGame/' target="_blank">
+                      <MDBMask overlay='white-slight' />
+                    </a>
+                  </MDBView>
+                  <MDBCardBody className='pb-2'>
+                    <h2 className='card-title white-text'>HangMan</h2>
+                    <hr color='white'/>
+                    <p className='card-text white-text'>
+                      Javascript Hangman. Still a work in progress</p>
+                    <hr color='white'/>
+                    
+                    <h5 className='d-flex justify-content-between'>
+
+                    <div>
+                      
+                       
+                        <MDBIcon fab icon='js yellow-text' className='mr-2' />
+                     
+                      
+                    </div>
+                    <div>
+                    
+                      <a href='https://ajs3993.github.io/WordGame/' className='waves-effect white-text' target="_blank">
+                     
+                        Live Preview <MDBIcon icon='image white-text' />
+                  
+                      </a>
+                    </div>
+
+
+                    </h5>
+                  </MDBCardBody>
+                </MDBCard>
+
+                {/* card 6 */}
+
+                <MDBCard className='m-3 rgba-black-light border' narrow cascade>
+                  <MDBView cascade hover>
+                    <img
+                      src='https://i.imgur.com/7pmldI3.png?1'
+                      className='img-fluid'
+                      alt='project one'
+                    />
+                    <a href='https://ajs3993.github.io/React-Rolodex/' target="_blank">
+                      <MDBMask overlay='white-slight' />
+                    </a>
+                  </MDBView>
+                  <MDBCardBody className='pb-2'>
+                    <h2 className='card-title white-text'>React Rolodex</h2>
+                    <hr color='white'/>
+                    <p className='card-text white-text'>
+                      A rolodex made with react components. A searchbar allows you to sort through employee id cards.
+                     </p>
+                    <hr color='white'/>
+                    
+                    <h5 className='d-flex justify-content-between'>
+
+<div>
+  
+<MDBIcon fab icon='js yellow-text' className='mr-2' />
+                     
+                
+<MDBIcon fab icon='react cyan-text' />
+ 
+  
+</div>
+<div>
+
+  <a href='https://ajs3993.github.io/React-Rolodex/' className='waves-effect white-text' target="_blank">
+ 
+    Live Preview <MDBIcon icon='image white-text' />
+
+  </a>
+</div>
+
+
+</h5>
+</MDBCardBody>
+</MDBCard>
+
+
+
+              </MDBCardGroup>
+ 
+      
+ </>
     );
   }
 }
