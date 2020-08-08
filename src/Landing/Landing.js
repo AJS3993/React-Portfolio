@@ -31,7 +31,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div id='landing'>
-        <MDBNavbar dark expand='md' fixed='top' className='z-depth-0' scrolling transparent>
+        <MDBNavbar dark expand='md' fixed='top' className='z-depth-0' transparent>
        
             <MDBNavbarToggler onClick={this.toggleCollapse('navbarCollapse')} />
             <MDBCollapse
@@ -41,12 +41,25 @@ class Landing extends React.Component {
             >
             
           <MDBNavbarNav left>
-          <h2>Andrew <span id='logo' className='font-weight-bold'>J</span> Smith </h2>
+         
                   </MDBNavbarNav>
                 <MDBNavbarNav right>
+
                 <MDBNavItem>
-                <MDBNavLink to="/projects">
-          Portfolio
+                <MDBNavLink className='m-3' id='NB' to="/blog">
+          - Blog -
+        </MDBNavLink>
+                </MDBNavItem>
+
+                <MDBNavItem>
+                <MDBNavLink className='m-3' id='NB' to="/projects">
+         - Portfolio -
+        </MDBNavLink>
+                </MDBNavItem>
+
+                <MDBNavItem>
+                <MDBNavLink id='NBA' className='m-3' to="" disabled>
+         - Home -
         </MDBNavLink>
                 </MDBNavItem>
                 
@@ -69,10 +82,10 @@ class Landing extends React.Component {
               <MDBContainer className='h-100 justify-content-center align-items-center'>
                 <MDBRow className='flex-center pt-5 mt-3'>
                   <MDBCol md='6' className='text-center text-md-right mb-5'>
-                    <div className='white-text'>
+                    <div  className='white-text'>
                     <h2>Andrew <span className='yellow-text font-weight-bold'>J</span> Smith </h2>
                    
-                      <h6 className='yellow-text'>Web Development</h6>
+                      <h6 id='glowie' className='yellow-text'>- Web Development -</h6>
                       <br />
                       
                     </div>
@@ -85,7 +98,7 @@ class Landing extends React.Component {
               
             </MDBMask>
            
-  <Particles
+  {/* <Particles
     params={{
       "style": {
         "height":"100%"
@@ -138,7 +151,7 @@ class Landing extends React.Component {
 	            }
 	        }
 	    }
-	}} />
+	}} /> */}
  
            
           </MDBView>

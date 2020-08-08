@@ -1,4 +1,6 @@
-
+#projects {
+font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
   
   
   .navbar.scrolling-navbar.top-nav-collapse  {
@@ -287,5 +289,24 @@
   h5 {
     display: inline-block;
     margin: 0;
+  }
+
+  #glowie{
+    text-shadow:0px 1px 8px rgb(255, 255, 255);
+  }
+
+  #NB:hover {
+    color: yellow;
+    text-shadow:0px 1px 12px rgb(255, 255, 255);
+  }
+  
+  #NBA {
+    color: yellow;
+    text-shadow:0px 1px 12px rgb(255, 255, 255);
+  }
+
+
+  #pcard:hover{
+    border-color: white;
   }
   

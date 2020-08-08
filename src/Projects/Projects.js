@@ -43,12 +43,25 @@ class Projects extends React.Component {
        >
        
      <MDBNavbarNav left>
-     <h2 className='white-text'>Andrew <span className='font-weight-bold yellow-text'>J</span> Smith </h2>
+     <h3 className='white-text'>Andrew <span id='glowie' className='font-weight-bold yellow-text'>J</span> Smith </h3>
              </MDBNavbarNav>
            <MDBNavbarNav right>
+         
            <MDBNavItem>
-           <MDBNavLink to="/">
-     Home
+           <MDBNavLink className='m-3' id='NB' to="/blog">
+          - Blog -
+        </MDBNavLink>
+                </MDBNavItem> 
+
+           <MDBNavItem>
+                <MDBNavLink id='NBA' className='m-3' to="" disabled>
+         - Portfolio -
+        </MDBNavLink>
+                </MDBNavItem>
+
+                <MDBNavItem>
+           <MDBNavLink className='m-3' id='NB' to="/">
+     - Home -
    </MDBNavLink>
            </MDBNavItem>
            
@@ -61,11 +74,11 @@ class Projects extends React.Component {
    <section>
        
        
-        <MDBContainer className='justify-content-center align-items-center pt-5'>
+        <MDBContainer className='justify-content-around align-items-center pt-5'>
           
           
-          <MDBRow className='flex-center pt-5 mt-3'>
-            <MDBCol lg='4' md='6'>
+          <MDBRow className='justify-content-around pt-5 mt-3 w-100'>
+            <MDBCol md='4'>
               <MDBCard className='testimonial-card text-center m-4 rgba-black-light border z-depth-1' narrow>
               
                 <MDBCardBody>
@@ -103,13 +116,15 @@ class Projects extends React.Component {
               </MDBCard>
            
             </MDBCol>
-            
-            <MDBCol lg='8' md='12' >
+            <MDBCol md='1' ></MDBCol>
+            <MDBCol md='7' >
+              <div className='border p-4 m-n3 rgba-black-light'>
          <MDBRow>
-      <MDBCol md='6' className='p-0'>
+      <MDBCol md='6' className='p-2 '>
       <a href='https://pizzatime465.herokuapp.com/' target="_blank">
         <MDBCard
-          className='card-image'
+        id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
           style={{
             backgroundImage:
               "url('https://i.imgur.com/Ya5rZqw.png?2')"
@@ -122,11 +137,11 @@ class Projects extends React.Component {
                 <strong>Pizza-Time</strong>
               </MDBCardTitle>
               <p>
-                Made with React
+                React
               </p>
               <a href='https://pizzatime465.herokuapp.com/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
+              <MDBBtn color='yellow' outline className='p-2'>
+                 View 
               </MDBBtn>
               </a>
             </div>
@@ -135,38 +150,10 @@ class Projects extends React.Component {
         </a>
       </MDBCol>
 
-      <MDBCol md='6' className='p-0'>
+      <MDBCol md='6' className='p-2 '>
       <MDBCard
-          className='card-image'
-          style={{
-            backgroundImage:
-              "url('https://i.imgur.com/QwLb70q.png?4')"
-          }}
-        >
-          <div className='text-white d-flex align-items-center rgba-black-strong py-3 px-2'>
-            <div>
-              
-              <MDBCardTitle tag='h3' className='pt-1'>
-                <strong>Groupie</strong>
-              </MDBCardTitle>
-              <p>
-                Made with Python + Django
-              </p>
-              <a href='https://groupie3993.herokuapp.com/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
-              </MDBBtn>
-              </a>
-            </div>
-          </div>
-        </MDBCard>
-      </MDBCol>
-
-      </MDBRow>
-<MDBRow>
-      <MDBCol md='6' className='p-0'>
-      <MDBCard
-          className='card-image'
+      id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
           style={{
             backgroundImage:
               "url('https://i.imgur.com/YiT80Ww.png?1')"
@@ -179,21 +166,54 @@ class Projects extends React.Component {
                 <strong>Mongoose Flights</strong>
               </MDBCardTitle>
               <p>
-                Made with Javascript + MongoDB
+                Javascript + MongoDB
               </p>
               <a href='https://mongoose-flights3890654.herokuapp.com/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
+              <MDBBtn color='yellow' outline className='p-2 '>
+                 View 
               </MDBBtn>
               </a>
             </div>
           </div>
         </MDBCard>
       </MDBCol>
-    
-      <MDBCol md='6' className='p-0'>
+
+      </MDBRow>
+<MDBRow>
+      <MDBCol md='6' className='p-2 '>
       <MDBCard
-          className='card-image'
+      id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
+          style={{
+            backgroundImage:
+              "url('https://i.imgur.com/QwLb70q.png?4')"
+          }}
+        >
+          <div className='text-white d-flex align-items-center rgba-black-strong py-3 px-2'>
+            <div>
+              
+              <MDBCardTitle tag='h3' className='pt-1'>
+                <strong>Groupie</strong>
+              </MDBCardTitle>
+              <p>
+                Python + Django
+              </p>
+              <a href='https://groupie3993.herokuapp.com/' target="_blank">
+              <MDBBtn color='yellow' outline className='p-2'>
+                 View 
+              </MDBBtn>
+              </a>
+            </div>
+          </div>
+        </MDBCard>
+      
+     
+      </MDBCol>
+    
+      <MDBCol md='6' className='p-2 '>
+      <MDBCard
+      id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
           style={{
             backgroundImage:
               "url('https://i.imgur.com/r414M0G.png?2')"
@@ -206,11 +226,11 @@ class Projects extends React.Component {
                 <strong>MyBookShelf</strong>
               </MDBCardTitle>
               <p>
-              Made with Javascript + MongoDB
+              Javascript + MongoDB
               </p>
               <a href='https://my-book-shelf789.herokuapp.com/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
+              <MDBBtn color='yellow' outline className='p-2 '>
+                 View 
               </MDBBtn>
               </a>
             </div>
@@ -221,9 +241,10 @@ class Projects extends React.Component {
         </MDBRow>
 
 <MDBRow>
-        <MDBCol md='6' className='p-0'>
+        <MDBCol md='6' className='p-2 '>
       <MDBCard
-          className='card-image'
+      id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
           style={{
             backgroundImage:
               "url('https://i.imgur.com/akoHktO.png?1')"
@@ -236,11 +257,11 @@ class Projects extends React.Component {
                 <strong>Hangman</strong>
               </MDBCardTitle>
               <p>
-                Made with Javascript
+                Javascript
               </p>
               <a href='https://ajs3993.github.io/WordGame/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
+              <MDBBtn color='yellow' outline className='p-2'>
+                 View 
               </MDBBtn>
               </a>
             </div>
@@ -249,26 +270,27 @@ class Projects extends React.Component {
      </MDBCol>
 
 
-        <MDBCol md='6' className='p-0'>
+        <MDBCol md='6' className='p-2 '>
       <MDBCard
-          className='card-image'
+      id='pcard'
+          className='card-image border-grey mb-1 z-depth-4'
           style={{
             backgroundImage:
               "url('https://i.imgur.com/7pmldI3.png?1')"
           }}
         >
-          <div className='text-white d-flex align-items-center rgba-black-strong py-3 px-2'>
+          <div className='text-white text-right rgba-black-strong py-3 px-2'>
             <div>
               
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>React Rolodex</strong>
               </MDBCardTitle>
               <p>
-                Made with React
+                React
               </p>
               <a href='https://ajs3993.github.io/React-Rolodex/' target="_blank">
-              <MDBBtn color='indigo' className='p-2'>
-                <MDBIcon icon='clone left' /> View project
+              <MDBBtn color='yellow' outline className='p-2'>
+                 View 
               </MDBBtn>
               </a>
             </div>
@@ -276,6 +298,7 @@ class Projects extends React.Component {
         </MDBCard>
       </MDBCol>
     </MDBRow>
+    </div>
             </MDBCol>
           </MDBRow>
           
