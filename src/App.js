@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Landing from './Landing/Landing';
 import Projects from './Projects/Projects';
+import Blog from './Blog/Blog'
 
 
 function App() {
@@ -19,7 +20,12 @@ function App() {
 <Route 
       exact path={`/projects`} 
       render={ (routerProps
-      ) => < Projects/>} />         
+      ) => < Projects/>} />  
+
+      <Route 
+      exact path={`/blog`} 
+      render={ (routerProps
+      ) => < Blog/>} />        
          
 
               
