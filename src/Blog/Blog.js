@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   MDBContainer,
-  MDBCardTitle,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBIcon,
-  MDBBtn,
   MDBCardBody,
   MDBNavLink,
   MDBNavItem,
@@ -33,9 +31,9 @@ class Blog extends React.Component {
     }));
   render() {
     return (
-      <div id='projects'>
+      <div id='blog'>
 
-<MDBNavbar dark expand='md' fixed='top' className='z-depth-0'>
+<MDBNavbar dark expand='md' fixed='top' className='z-depth-0' scrolling>
        
        <MDBNavbarToggler onClick={this.toggleCollapse('navbarCollapse')} />
        <MDBCollapse
@@ -76,37 +74,45 @@ class Blog extends React.Component {
    <section>
        
        
-        <MDBContainer className='justify-content-around align-items-center pt-5'>
+        <div className='pt-5'>
           
           
-          <MDBRow className='justify-content-around pt-5 mt-3 w-100'>
-           
-            <MDBCol md='12' >
-              <div className='border p-4 m-n3 rgba-black-light'>
+          <MDBRow className='pt-5 mt-3'>
+          <MDBCol md='2' className='mx-2'><br/>
+   <a href='/myfirstpost'><p id='postLink' className='text-center'>- My First Post -</p></a> <br/> 
+   <a href='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></a> <br/> 
+   <a href='/generalassembly'><p id='postLink' className='text-center'>- General Assembly -</p></a> 
+           </MDBCol>
+          
+            <MDBCol md='9' >
+              <div id='blogWrapper' className='border p-4 m-n3 rgba-black-light'>
          <MDBRow>
       <MDBCol md='4' className='p-2 '>
       
-      <MDBCard>
+      <MDBCard className='border rgba-green-light white-text'>
+          
+      <a href='/myfirstpost'>
+              
           <MDBCardImage
             top
-            src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg'
+            src='https://i.imgur.com/JK4H6wB.jpg'
             overlay='white-slight'
             hover
             waves
             alt='MDBCard image cap'
           />
+          </a>
           <MDBCardBody>
-            <a href='#!' className='activator waves-effect waves-light mr-4'>
-              <MDBIcon icon='share-alt' className='black-text' />
-            </a>
-            <MDBCardTitle>Card Title</MDBCardTitle>
-            <hr />
-            <MDBCardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card&apos;s content.
+     
+              <p id='date' className='text-right white-text'>7/14/2020</p>
+           
+            <h5>My First Post</h5>
+            <hr className='hr-light' />
+            <MDBCardText className='white-text'>
+           My first blog post! Its been a while that I wanted to start a blog. Here goes...
             </MDBCardText>
-            <a href='#!' className='black-text d-flex justify-content-end'>
-              <h5>
+            <a href='/myfirstpost' className='white-text d-flex justify-content-end'>
+              <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
@@ -118,27 +124,27 @@ class Blog extends React.Component {
 
       <MDBCol md='4' className='p-2 '>
       
-      <MDBCard>
+      <MDBCard className='rgba-blue-light border'>
+      <a href='/lablife'>
           <MDBCardImage
             top
-            src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg'
+            src='https://media.gettyimages.com/photos/woman-with-pcr-tubes-picture-id697550241'
             overlay='white-slight'
             hover
             waves
             alt='MDBCard image cap'
           />
+          </a>
           <MDBCardBody>
-            <a href='#!' className='activator waves-effect waves-light mr-4'>
-              <MDBIcon icon='share-alt' className='black-text' />
-            </a>
-            <MDBCardTitle>Card Title</MDBCardTitle>
-            <hr />
-            <MDBCardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card&apos;s content.
+          <p id='date' className='text-right white-text'>7/24/2020</p>
+           
+            <h5 className='white-text'>Lab Life</h5>
+            <hr className="hr-light"/>
+            <MDBCardText className='white-text'>
+              Once upon a time a wanted to spend my whole life in the lab. Then I got there...
             </MDBCardText>
-            <a href='#!' className='black-text d-flex justify-content-end'>
-              <h5>
+            <a href='/lablife' className='white-text d-flex justify-content-end'>
+              <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
@@ -149,29 +155,28 @@ class Blog extends React.Component {
       </MDBCol>
 
    
-      <MDBCol md='4' className='p-2 '>
+      <MDBCol md='4' className='p-2'>
       
-      <MDBCard>
+      <MDBCard className='rgba-red-light border white-text'>
+          <a href='/generalassembly'>
           <MDBCardImage
             top
-            src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg'
+            src='https://i.imgur.com/WqRWfNJ.jpg'
             overlay='white-slight'
             hover
             waves
             alt='MDBCard image cap'
-          />
+          /></a>
           <MDBCardBody>
-            <a href='#!' className='activator waves-effect waves-light mr-4'>
-              <MDBIcon icon='share-alt' className='black-text' />
-            </a>
-            <MDBCardTitle>Card Title</MDBCardTitle>
-            <hr />
-            <MDBCardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card&apos;s content.
+          <p id='date' className='text-right white-text'>8/2/2020</p>
+           
+            <h5>General Assembly</h5>
+            <hr className='hr-light' />
+            <MDBCardText className='white-text'>
+              My first major step into the world of software engineering. I had no idea what I was getting into...
             </MDBCardText>
-            <a href='#!' className='black-text d-flex justify-content-end'>
-              <h5>
+            <a href='/generalassembly' className='white-text d-flex justify-content-end'>
+              <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
@@ -185,7 +190,7 @@ class Blog extends React.Component {
      
 
 
-        <MDBCol md='4' className='p-2'>
+        <MDBCol md='1' className='p-2'>
       
       </MDBCol>
     </MDBRow>
@@ -193,7 +198,7 @@ class Blog extends React.Component {
             </MDBCol>
           </MDBRow>
           
-          </MDBContainer>
+          </div>
        
         
  </section>

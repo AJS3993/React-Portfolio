@@ -1,4 +1,6 @@
-#blog {
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+#blog1 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
         background: url('https://images.unsplash.com/photo-1457365050282-c53d772ef8b2')no-repeat center center;
         background-size: cover;
@@ -11,26 +13,10 @@
       }
 
 
-.border{
-        opacity: 0.8;
-    }
-
-    .border:hover{
-        opacity: 1;
-    }
-
-h5{
-    font-size: 30px;
-}
-
-#readMore:hover{
-    font-size: 32px;
-    color:yellow;  
-}
-
-#date{
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 15px;
+p{
+    font-size: 25px;
+    font-family: "Exo 2",sans-serif;
+    color: rgb(0, 0, 0,0.75);
 }
 
 #postLink{

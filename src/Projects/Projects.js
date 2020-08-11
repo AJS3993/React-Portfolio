@@ -33,7 +33,7 @@ class Projects extends React.Component {
     return (
       <div id='projects'>
 
-<MDBNavbar dark expand='md' fixed='top' className='z-depth-0'>
+<MDBNavbar dark expand='md' fixed='top' className='z-depth-0' scrolling>
        
        <MDBNavbarToggler onClick={this.toggleCollapse('navbarCollapse')} />
        <MDBCollapse
