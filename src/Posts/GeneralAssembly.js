@@ -76,9 +76,9 @@ class GeneralAssembly extends React.Component {
               
               <MDBRow className='pt-5 mt-3'>
               <MDBCol md='2' className='mx-2'><br/>
-       <a href='/myfirstpost'><p id='postLink' className='text-center'>- My First Post -</p></a> <br/> 
-       <a href='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></a> <br/> 
-       <a href='/generalassembly' className='disabled'><p id='postLinkA' className='text-center'>- General Assembly -</p></a> 
+       <MDBNavLink to='/myfirstpost'><p id='postLink' className='text-center'>- My First Post -</p></MDBNavLink> <br/> 
+       <MDBNavLink to='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></MDBNavLink> <br/> 
+       <MDBNavLink to='/generalassembly' className='disabled'><p id='postLinkA' className='text-center'>- General Assembly -</p></MDBNavLink> 
                </MDBCol>
               
                <MDBCol md='9' >
