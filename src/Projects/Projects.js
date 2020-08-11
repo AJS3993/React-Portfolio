@@ -136,7 +136,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>Pizza-Time</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
                 React
               </p>
               <a href='https://pizzatime465.herokuapp.com/' target="_blank">
@@ -165,7 +165,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>Mongoose Flights</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
                 Javascript + MongoDB
               </p>
               <a href='https://mongoose-flights3890654.herokuapp.com/' target="_blank">
@@ -195,7 +195,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>Groupie</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
                 Python + Django
               </p>
               <a href='https://groupie3993.herokuapp.com/' target="_blank">
@@ -225,7 +225,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>MyBookShelf</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
               Javascript + MongoDB
               </p>
               <a href='https://my-book-shelf789.herokuapp.com/' target="_blank">
@@ -256,7 +256,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>Hangman</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
                 Javascript
               </p>
               <a href='https://ajs3993.github.io/WordGame/' target="_blank">
@@ -285,7 +285,7 @@ class Projects extends React.Component {
               <MDBCardTitle tag='h3' className='pt-1'>
                 <strong>React Rolodex</strong>
               </MDBCardTitle>
-              <p>
+              <p className='white-text'>
                 React
               </p>
               <a href='https://ajs3993.github.io/React-Rolodex/' target="_blank">
