@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  MDBContainer,
+  MDBLink,
   MDBRow,
   MDBCol,
   MDBCard,
@@ -48,21 +48,21 @@ class Blog extends React.Component {
            <MDBNavbarNav right>
          
            <MDBNavItem>
-           <MDBNavLink id='NBA' className='m-3' to="" disabled>
+           <MDBLink id='NBA' className='m-3' to="" disabled>
           - Blog -
-        </MDBNavLink>
+        </MDBLink>
                 </MDBNavItem> 
 
            <MDBNavItem>
-           <MDBNavLink className='m-3' id='NB' to="/projects">
+           <MDBLink className='m-3' id='NB' to="/projects">
          - Portfolio -
-        </MDBNavLink>
+        </MDBLink>
                 </MDBNavItem>
 
                 <MDBNavItem>
-           <MDBNavLink className='m-3' id='NB' to="/">
+           <MDBLink className='m-3' id='NB' to="/">
      - Home -
-   </MDBNavLink>
+   </MDBLink>
            </MDBNavItem>
            
          </MDBNavbarNav>
@@ -79,9 +79,9 @@ class Blog extends React.Component {
           
           <MDBRow className='pt-5 mt-3'>
           <MDBCol md='2' className='mx-2'><br/>
-   <MDBNavLink to='/myfirstpost'><p id='postLink' className='text-center'>- My First Post -</p></MDBNavLink> <br/> 
-   <MDBNavLink to='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></MDBNavLink> <br/> 
-   <MDBNavLink to='/generalassembly'><p id='postLink' className='text-center'>- General Assembly -</p></MDBNavLink> 
+   <MDBLink to='/myfirstpost'><p id='postLink' className='text-center'>- My First Post -</p></MDBLink> <br/> 
+   <MDBLink to='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></MDBLink> <br/> 
+   <MDBLink to='/generalassembly'><p id='postLink' className='text-center'>- General Assembly -</p></MDBLink> 
            </MDBCol>
           
             <MDBCol md='9' >
@@ -91,7 +91,7 @@ class Blog extends React.Component {
       
       <MDBCard className='border rgba-green-light white-text'>
           
-      <MDBNavLink to='/myfirstpost'>
+      <MDBLink to='/myfirstpost'>
               
           <MDBCardImage
             top
@@ -101,7 +101,7 @@ class Blog extends React.Component {
             waves
             alt='MDBCard image cap'
           />
-          </MDBNavLink>
+          </MDBLink>
           <MDBCardBody>
      
               <p id='date' className='text-right white-text'>7/14/2020</p>
@@ -111,12 +111,12 @@ class Blog extends React.Component {
             <MDBCardText className='white-text'>
            My first blog post! Its been a while that I wanted to start a blog. Here goes...
             </MDBCardText>
-            <MDBNavLink to='/myfirstpost' className='white-text d-flex justify-content-end'>
+            <MDBLink to='/myfirstpost' className='white-text d-flex justify-content-end'>
               <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
-            </MDBNavLink>
+            </MDBLink>
           </MDBCardBody>
         </MDBCard>
   
@@ -125,7 +125,7 @@ class Blog extends React.Component {
       <MDBCol md='4' className='p-2 '>
       
       <MDBCard className='rgba-blue-light border'>
-      <MDBNavLink to='/lablife'>
+      <MDBLink to='/lablife'>
           <MDBCardImage
             top
             src='https://media.gettyimages.com/photos/woman-with-pcr-tubes-picture-id697550241'
@@ -134,7 +134,7 @@ class Blog extends React.Component {
             waves
             alt='MDBCard image cap'
           />
-          </MDBNavLink>
+          </MDBLink>
           <MDBCardBody>
           <p id='date' className='text-right white-text'>7/24/2020</p>
            
@@ -143,12 +143,12 @@ class Blog extends React.Component {
             <MDBCardText className='white-text'>
               Once upon a time a wanted to spend my whole life in the lab. Then I got there...
             </MDBCardText>
-            <MDBNavLink to='/lablife' className='white-text d-flex justify-content-end'>
+            <MDBLink to='/lablife' className='white-text d-flex justify-content-end'>
               <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
-            </MDBNavLink>
+            </MDBLink>
           </MDBCardBody>
         </MDBCard>
 
@@ -158,7 +158,7 @@ class Blog extends React.Component {
       <MDBCol md='4' className='p-2'>
       
       <MDBCard className='rgba-red-light border white-text'>
-          <MDBNavLink to='/generalassembly'>
+          <MDBLink to='/generalassembly'>
           <MDBCardImage
             top
             src='https://i.imgur.com/WqRWfNJ.jpg'
@@ -166,7 +166,7 @@ class Blog extends React.Component {
             hover
             waves
             alt='MDBCard image cap'
-          /></MDBNavLink>
+          /></MDBLink>
           <MDBCardBody>
           <p id='date' className='text-right white-text'>8/2/2020</p>
            
@@ -175,12 +175,12 @@ class Blog extends React.Component {
             <MDBCardText className='white-text'>
               My first major step into the world of software engineering. I had no idea what I was getting into...
             </MDBCardText>
-            <MDBNavLink to='/generalassembly' className='white-text d-flex justify-content-end'>
+            <MDBLink to='/generalassembly' className='white-text d-flex justify-content-end'>
               <h5 id='readMore'>
                 Read more
                 <MDBIcon icon='angle-double-right' className='ml-2' />
               </h5>
-            </MDBNavLink>
+            </MDBLink>
           </MDBCardBody>
         </MDBCard>
      

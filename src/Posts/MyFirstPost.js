@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  MDBContainer,
+  MDBLink,
   MDBRow,
   MDBCol,
   MDBCard,
@@ -76,9 +76,9 @@ class MyFirstPost extends React.Component {
           
           <MDBRow className='pt-5 mt-3'>
           <MDBCol md='2' className='mx-2'><br/>
-   <MDBNavLink to='/myfirstpost' className='disabled'><p id='postLinkA' className='text-center'>- My First Post -</p></MDBNavLink> <br/> 
-   <MDBNavLink to='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></MDBNavLink> <br/> 
-   <MDBNavLink to='/generalassembly'><p id='postLink' className='text-center'>- General Assembly -</p></MDBNavLink> 
+   <MDBLink to='/myfirstpost' className='disabled'><p id='postLinkA' className='text-center'>- My First Post -</p></MDBLink> <br/> 
+   <MDBLink to='/lablife'><p id='postLink' className='text-center'>- Lab Life -</p></MDBLink> <br/> 
+   <MDBLink to='/generalassembly'><p id='postLink' className='text-center'>- General Assembly -</p></MDBLink> 
            </MDBCol>
           
            <MDBCol md='9' >
