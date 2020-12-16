@@ -8,9 +8,32 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: rgba(132, 169, 218, 0.25);
   }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
+
+  .soLink:hover {
+    box-shadow: 0px 0px 3px rgb(255, 255, 255) !important;
+  }
+
+  .navLink:hover {
+    color: rgb(223, 215, 170) !important;
+    text-decoration:underline;
+    text-underline-offset: 4px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+  .tm1 {
+    font-family:Sacramento;
+    font-size:50px;
+  }
+
+  .tm2 {
+    font-family:Sacramento;
+    font-size:50px;
+  }
+  

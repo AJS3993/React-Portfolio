@@ -5,14 +5,14 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import './index.css';
 import * as serviceWorker from "./serviceWorker";
-import App from "./App";
+import Home from "./components/Home"
 
 import { BrowserRouter as Router } from "react-router-dom";
 
 
 ReactDOM.render(
     <Router basename={process.env.PUBLIC_URL}>
-      <App />
+      <Home/>
     </Router>,
     document.getElementById('root')
   );
