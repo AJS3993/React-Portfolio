@@ -41,7 +41,7 @@ class Home extends React.Component {
       </MDBNavbar>
    
           
-      <MDBRow className='rgba-yellow-slight'>
+      <MDBRow className='rgba-yellow-slight titleBanner'>
       <MDBCol md="3">
       
           </MDBCol>
@@ -49,7 +49,7 @@ class Home extends React.Component {
             <span className='tm1'>Accesorios</span>
           </MDBCol>
           <MDBCol md="2">
-            <img src="https://i.imgur.com/DwFMuSm.png" className="img-fluid my-n5" alt="" />
+            <img src="https://i.imgur.com/DwFMuSm.png" className="img-fluid mt-n5 mb-n3" alt="" />
           </MDBCol>
           <MDBCol md="4" className='mx-n3'>
             <span className='tm2'>La Mexicana</span>
@@ -59,8 +59,7 @@ class Home extends React.Component {
           </MDBCol>
         </MDBRow>
   
-       
-        <MDBNavbar expand='md' className='mx-5 rounded rgba-red-strong z-depth-4'>
+        <MDBNavbar expand='md' className='mx-5 rounded rgba-red-strong z-depth-1'>
       
         <MDBNavbarNav>
       <MDBNavItem>

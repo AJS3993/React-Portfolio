@@ -21,7 +21,7 @@
   }
 
   .navLink:hover {
-    color: rgb(223, 215, 170) !important;
+    color: rgb(56, 56, 55) !important;
     text-decoration:underline;
     text-underline-offset: 4px;
   }
@@ -37,3 +37,7 @@
     font-size:50px;
   }
   
+  .titleBanner {
+    background-color: rgba(230, 240, 145, 0.466);
+    border-bottom: solid rgba(202, 158, 158, 0.226) 1px;
+  }
