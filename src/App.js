@@ -13,18 +13,6 @@ function App() {
       exact path={`/`} 
       render={ (routerProps
       ) => < HomePage/>} />
-
-          
-
-          <Route
-            exact
-            path="/Contact"
-            render={() => (
-              <HomePage
-              />
-            )}
-          />
-
               
               </Switch>
 

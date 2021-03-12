@@ -1,423 +1,224 @@
-import React from 'react';
-import {MDBContainer,MDBRow,MDBCol,MDBCard,MDBView,MDBCardTitle,MDBCardBody,MDBCardGroup,MDBIcon,MDBMask,MDBBtn,MDBCardImage} from 'mdbreact';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { MDBBtn,MDBNavbar, MDBNavbarNav, MDBNavItem, MDBIcon, MDBCard, MDBCardTitle, MDBDropdownItem, MDBNavLink, MDBView, MDBMask, MDBContainer, MDBRow, MDBCol, MDBDropdown,MDBDropdownToggle,MDBDropdownMenu,MDBFormInline} from "mdbreact";
 import './HomePage.css';
-  // import ScrollSpy from './scrollSpy';
-
-class HomePage extends React.Component {
+class DoubleNavigationPage extends React.Component {
   
 
   render() {
+    
+
     return (
-      <div id='profile-ex' className='my-3'>
-       
-        <MDBContainer fluid>
-          <MDBRow>
-            <MDBCol lg='4' md='12'>
-              <MDBCard  className='testimonial-card text-center m-4 mdb-color darken-3 z-depth-1' narrow>
-              <MDBView cascade hover>
-                <img
-                  alt='THE LEGEND'
-                  src='https://i.imgur.com/jWsMQyv.jpg?1'
-                  className='z-depth-2 mx-auto w-100'
-                />
-                <a href='#!'>
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                <MDBCardBody>
-                  <MDBCardTitle className='white-text'>
-                    <strong>Andrew J Smith</strong>
-                  </MDBCardTitle>
-                  <h5 className='white-text'>
-                    Software Engineer
-                  </h5>
-                  <p className='white-text'>Austin, TX</p>
-                  <p className='card-text mt-3 white-text'>
-                    Former health professional who fell in to the world of software
-                  </p>
-                  <hr color='white'/>
-                  
-                  <a href='https://github.com/AJS3993'>
-                  <MDBBtn social="git" size="sm" className='px-2'>
-                    <MDBIcon fab icon="github" className="pr-1" /> Github
-                  </MDBBtn>
-                  </a>
+      <Router>
 
-                <a href='https://www.linkedin.com/in/ajs3993/'>
-                  <MDBBtn social="li" size="sm" className='px-2'>
-                    <MDBIcon fab icon="linkedin-in" className="pr-1" /> Linkedin
-                  </MDBBtn>
-                </a>
-
-                 <a href='https://i.imgur.com/Lv2Tfie.png'>
-                  <MDBBtn social="gplus" size="sm" className='px-2'> 
-                  <MDBIcon far icon="file-alt" /> Resume
-                  </MDBBtn>
-                  </a>
-                </MDBCardBody>
-              </MDBCard>
-              
-              {/* Skills Card */}
-              
-              <MDBCard className='m-4 mdb-color darken-3'>
-                <MDBCardBody className='text-center'>
-                  <h5 className='white-text'>
-                    <strong>Skills</strong>
-                  </h5>
-
-                  <hr color='white'/>
-
-                  <MDBBtn color='blue'size='sm' rounded className='px-3'>
-                    Bootstrap
-                  </MDBBtn>
-                  
-                  <MDBBtn color='light-green'size='sm' rounded className='px-3'>
-                    React
-                  </MDBBtn>
-                  
-                  <MDBBtn color='orange'size='sm' rounded className='px-3'>
-                    Javascript
-                  </MDBBtn>
-                 
-                  <MDBBtn color='yellow'size='sm' rounded className='px-3'>
-                    Python
-                  </MDBBtn>
-                  
-                  <MDBBtn color='red'size='sm' rounded className='px-3'>
-                    MongoDB
-                  </MDBBtn>
-                 
-                  <MDBBtn color='indigo'size='sm' rounded className='px-3'>
-                    SQL
-                  </MDBBtn>
-                </MDBCardBody>
-              </MDBCard>
-
-              <MDBCard className='m-4 mdb-color darken-3'>
-                <MDBCardBody className='text-center'>
-                  <h5 className='white-text'>
-                    <strong>About Me</strong>
-                  </h5>
-
-                  <hr color='white'/>
-
-                <p className='white-text'>
-                I am a software engineer with a background in science and healthcare. I have built many projects both front and back end. I currently have the most experience in javascript, react and python but I also have some experience with many other technologies and I am always learning more. 
-                </p>
-                  
-                
-                </MDBCardBody>
-              </MDBCard>
-              
-
-            </MDBCol>
-            
-            
-            
-            <MDBCol lg='8' md='12' className='text-center' >
-              <div className='text-center mb-4'>
-                <h1 className='white-text'>
-                  
-                  Projects
-                 
-                </h1>
-              </div>
+        <div className="">
           
-            {/* <ScrollSpy/> */}
 
-            <MDBCardGroup deck>
-                
-                {/* card 1 */}
-
-                <MDBCard className=' mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <MDBCardImage
-                      src='https://i.imgur.com/Ya5rZqw.png?2'
-                      className='card-img-top'
-                      alt='project one'
-                    />
-                    <a href='https://pizzatime465.herokuapp.com/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>Pizza Time</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                    Pizza Time is a tool for restaurant owners to create their menu and sell their food. Pizza Time is also for users to order food directly from the app. It was developed with Mongoose, Express and React.
-                    </p>
-                  
-                  <hr color='white'/>
-           
-<h5 className='d-flex justify-content-between'>
-
-                    <div>
-                      
-                       
-                        <MDBIcon fab icon='js yellow-text' className='mr-2' />
-                     
-                
-                        <MDBIcon fab icon='react cyan-text' />
-                      
-                    </div>
-                    <div>
-                    
-                      <a href='https://pizzatime465.herokuapp.com/' className='waves-effect white-text' target="_blank">
-                     
-                        Live Preview <MDBIcon icon='image white-text' />
-                  
-                      </a>
-                    </div>
-
-
-                    </h5>
-                  </MDBCardBody>
-                </MDBCard>
-
-                
-
-              {/* card 2 */}
-                
-                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <img
-                      src='https://i.imgur.com/QwLb70q.png?4'
-                      className='img-fluid'
-                      alt='project one'
-                    />
-                    <a href='https://groupie3993.herokuapp.com/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>Groupie</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                    keeping tabs on your favorite local artists just got a lot easier. Simply create an account and search events or artists in your area. Add your favorite artists and keep track of their upcoming events.
-                    </p>
-                    <hr color='white'/>
-                    <h5 className='d-flex justify-content-between'>
-
-<div>
-  
-   
-    <MDBIcon fab  icon='python yellow-text md' />
- 
-
-  
-</div>
-<div>
-
-  <a href='https://groupie3993.herokuapp.com/' className='waves-effect white-text' target="_blank">
-  
-    Live Preview <MDBIcon icon='image white-text' />
-
-  </a>
-</div>
-
-
-</h5>
-</MDBCardBody>
-                </MDBCard>
-              
-              </MDBCardGroup>
      
-          <MDBCardGroup deck>
-
-              {/* card 3 */}
-
-                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <img
-                      src='https://i.imgur.com/YiT80Ww.png?1'
-                      className='img-fluid'
-                      alt='project one'
-                    />
-                    <a href='https://mongoose-flights3890654.herokuapp.com/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>Mongoose Flights</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                      A flight tracking app that uses MongoDB to hold data. I built it to practice so it has a bit more functionality than a real app would have.</p>
-                    <hr color='white'/>
-                    
-                    <h5 className='d-flex justify-content-between'>
-
-                    <div>
-                      
-                       
-                        <MDBIcon fab icon='js yellow-text' className='mr-2' />
-                     
-                      
-                    </div>
-                    <div>
-                    
-                      <a href='https://mongoose-flights3890654.herokuapp.com/' className='waves-effect white-text' target="_blank">
-                     
-                        Live Preview <MDBIcon icon='image white-text' />
-                  
-                      </a>
-                    </div>
-
-
-                    </h5>
-                  </MDBCardBody>
-                </MDBCard>
-
-                {/* card 4 */}
-
-                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <img
-                      src='https://i.imgur.com/r414M0G.png?2'
-                      className='img-fluid'
-                      alt='project one'
-                    />
-                    <a href='https://my-book-shelf789.herokuapp.com/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>My Book Shelf</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                    MyBookShelf is your own personal library tracker. Sort your books to help you remember which books you have read and which books you havent. </p>
-                    <hr color='white'/>
-                    
-                    <h5 className='d-flex justify-content-between'>
-
-<div>
+      
   
-   
-    <MDBIcon fab icon='js yellow-text' className='mr-2' />
+
+
+  <div className='midRow d-flex justify-content-center align-items-center flex-column'>
+
+
+
  
-  
-</div>
-<div>
 
-  <a href='https://my-book-shelf789.herokuapp.com/' className='waves-effect white-text' target="_blank">
- 
-    Live Preview <MDBIcon icon='image white-text' />
+  <MDBRow className='w-100 d-flex'>
+<MDBCol size='1' c></MDBCol>
+<MDBCol size='10'>
 
-  </a>
-</div>
-
-
-</h5>
-</MDBCardBody>
-</MDBCard>
-
-
-
-              </MDBCardGroup>
-
-          
-     
-          <MDBCardGroup deck>
-
-              {/* card 5 */}
-
-                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <img
-                      src='https://i.imgur.com/akoHktO.png?1'
-                      className='img-fluid'
-                      alt='project one'
-                    />
-                    <a href='https://ajs3993.github.io/WordGame/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>HangMan</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                      Javascript Hangman. Still a work in progress</p>
-                    <hr color='white'/>
-                    
-                    <h5 className='d-flex justify-content-between'>
-
-                    <div>
-                      
-                       
-                        <MDBIcon fab icon='js yellow-text' className='mr-2' />
-                     
-                      
-                    </div>
-                    <div>
-                    
-                      <a href='https://ajs3993.github.io/WordGame/' className='waves-effect white-text' target="_blank">
-                     
-                        Live Preview <MDBIcon icon='image white-text' />
-                  
-                      </a>
-                    </div>
-
-
-                    </h5>
-                  </MDBCardBody>
-                </MDBCard>
-
-                {/* card 6 */}
-
-                <MDBCard className='mb-5 m-4 mdb-color darken-3' narrow cascade>
-                  <MDBView cascade hover>
-                    <img
-                      src='https://i.imgur.com/7pmldI3.png?1'
-                      className='img-fluid'
-                      alt='project one'
-                    />
-                    <a href='https://ajs3993.github.io/React-Rolodex/' target="_blank">
-                      <MDBMask overlay='white-slight' />
-                    </a>
-                  </MDBView>
-                  <MDBCardBody className='pb-2'>
-                    <h2 className='card-title white-text'>React Rolodex</h2>
-                    <hr color='white'/>
-                    <p className='card-text white-text'>
-                      A rolodex made with react components. A searchbar allows you to sort through employee id cards.
-                     </p>
-                    <hr color='white'/>
-                    
-                    <h5 className='d-flex justify-content-between'>
-
-<div>
-  
-<MDBIcon fab icon='js yellow-text' className='mr-2' />
-                     
-                
-<MDBIcon fab icon='react cyan-text' />
- 
-  
-</div>
-<div>
-
-  <a href='https://ajs3993.github.io/React-Rolodex/' className='waves-effect white-text' target="_blank">
- 
-    Live Preview <MDBIcon icon='image white-text' />
-
-  </a>
-</div>
-
-
-</h5>
-</MDBCardBody>
-</MDBCard>
-
-
-
-              </MDBCardGroup>
+<MDBNavbar expand='md'  className='z-depth-0 px-5 white text-nowrap'>
+       <MDBNavbarNav className='m-0 p-0' left>
+         <MDBNavItem className='m-0 p-0'>
          
-             
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </div>
+           <img className='lemon p-3 m-0' src='https://i.imgur.com/aLgjcZq.png'/>
+
+         </MDBNavItem>
+
+         <MDBNavItem className='d-flex align-items-end motto m-0 px-0'>
+                    Your main squeeze for roller skates
+         </MDBNavItem>
+
+       </MDBNavbarNav>
+
+<MDBNavbarNav>
+<MDBNavItem className='mx-n5'>
+              <MDBFormInline waves className='w-100 px-5 mr-5 ml-n5'>
+                <div className="md-form my-0 w-100 px-0">
+                <MDBIcon size='lg' icon="search" />
+                  <input className="form-control border border-dark topNav  w-100" type="text" placeholder="What are you looking for?" aria-label="Search" />
+                </div>
+              </MDBFormInline>
+            </MDBNavItem>
+            </MDBNavbarNav>
+           
+            <MDBNavbarNav right>
+           
+           <MDBNavItem>
+           <MDBNavLink className='topNav2' to="#!">
+             <MDBIcon icon="user" />
+           </MDBNavLink>
+           </MDBNavItem>
+           
+           
+            <MDBNavItem>
+              <MDBNavLink className='topNav' to="#!">Sign in</MDBNavLink>
+            </MDBNavItem>
+
+                  
+            <MDBNavItem>
+           <MDBNavLink className='topNav2' to="#!">
+         or
+           </MDBNavLink>
+           </MDBNavItem>
+
+
+            <MDBNavItem >
+              <MDBNavLink className='topNav' to="#!">Register</MDBNavLink>
+            </MDBNavItem>
+
+           
+            <MDBNavItem className='topNav'>
+           <MDBNavLink className='topNav2' to="#!">
+       |
+           </MDBNavLink>
+           </MDBNavItem>
+
+            <MDBNavItem>
+              <MDBNavLink className='topNav' to="#!">
+              <MDBIcon icon="shopping-cart" />(0)
+              </MDBNavLink>
+            </MDBNavItem>
+
+
+</MDBNavbarNav>
+
+       </MDBNavbar>
+
+
+
+
+<MDBCard className='w-100 z-depth-0'>
+  <MDBNavbar expand='md'  className='z-depth-0 bt2 py-0'>
+  <MDBNavItem active>
+              <MDBNavLink to="#!" className='homeBtn'>Home</MDBNavLink>
+            </MDBNavItem>
+
+
+  <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Skates</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Wheels</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Hardware</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Protective Gear</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Apparel</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className='black-text'>
+                  <span className="mr-2 dropDown">Accessories</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                 
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+
+       </MDBNavbar>
+      
+          <div className='text-white text-center pt-5 px-4'>
+            <div>
+           
+    
+           
+              <img className='w-100' src='https://i.imgur.com/bPPUB3c.png?1'/>
+ 
+            </div>
+          </div>
+        </MDBCard>
+
+</MDBCol>
+<MDBCol size='1'></MDBCol>
+ 
+
+
+  
+    
+    </MDBRow>
+
+  </div>
+
+
+
+
+ 
+ 
+ </div>
+
+</Router>
     );
   }
 }
 
-export default HomePage;
+export default DoubleNavigationPage;
