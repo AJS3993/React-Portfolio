@@ -20,12 +20,22 @@
     color: black;
 }
 
+.dropDown:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:  1px 1px 1px black;
+}
+
 .homeBtn{
     color: black
 }
 
+.homeBtn:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:  1px 1px 1px black;
+}
+
 .topNav{
-    color: rgb(63, 63, 63);
+    color: rgb(61, 61, 61);
     font-size: 18px;
 }
 
